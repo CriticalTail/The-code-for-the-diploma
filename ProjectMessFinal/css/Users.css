@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 90vh;
+    background-color: #14191f;
+}
+#container {
+    height: 670px;
+    width: 500px;
+    position: relative;
+    padding: 30px;
+    border-radius: 30px;
+    background: #14191f;
+    border: 3px solid rgba(22, 74, 105, 1);
+}
+#container #header {
+    height: 130px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: #164a69;
+}
+
+#header #headerProfile {
+    height: 90px;
+    width: 90px;
+    border: 2px solid green;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    left: 30px;
+}
+
+#header #headerProfile img {
+    width: 100%;
+}
+
+#header #details {
+    position: absolute;
+    left: 140px;
+}
+
+#header #details #headerName {
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    color: #fff;
+    font-size: 22px;
+}
+
+#header #details #headerStatus {
+    font-weight: 300;
+    color: #99ff6e;
+}
+
+#header #logout {
+    height: 50px;
+    width: 90px;
+    font-size: 17px;
+    background: #0b1719;
+    color: #fff;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#header #logout a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#header #logout:hover {
+    background: #428899;
+}
+
+#searchBox {
+    height: 60px;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    top: 150px;
+}
+
+#searchBox input[type="text"] {
+    height: 100%;
+    width: 84%;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    background: #242f3d;
+    border-radius: 7px;
+    color: #496670;
+    font-size: 18px;
+}
+
+#searchBox .searchButton {
+    height: 60px;
+    width: 60px;
+    background: #242f3d;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#onlineUsers {
+    height: 420px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 225px;
+    overflow-y: auto;
+}
+#onlineUsers #errors{
+    font-size: 19px;
+    padding: 10px 35px;
+}
+
+#onlineUsers .profile {
+    height: 90px;
+    width: 90%;
+    background: #164a69;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 5%;
+    margin: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#onlineUsers .profile:first-child {
+    top: 0px;
+}
+#onlineUsers .profile .image {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid green;
+    position: absolute;
+    left: 25px;
+}
+#onlineUsers .profile .image img {
+    width: 100%;
+}
+#onlineUsers .profile .name,
+.lastMessage {
+    height: 40px;
+    width: 60%;
+    position: absolute;
+    left: 110px;
+    line-height: 40px;
+    overflow: hidden;
+}
+#onlineUsers .profile .name {
+    color: #e8e9ea;
+    top: 10px;
+    font-size: 19px;
+}
+
+#onlineUsers .profile .lastMessage {
+    bottom: 10px;
+    color: #a2a6aa;
+}
+
+#onlineUsers .profile .status {
+    height: 15px;
+    width: 15px;
+    border-radius: 10px;
+    position: absolute;
+    right: 40px;
+}
+
+#onlineUsers .profile .online {
+    background: green;
+
+}
+
+#onlineUsers .profile .offline {
+    background: #Be0000;
+}
+
+#onlineUsers::-webkit-scrollbar {
+    background: transparent;
+}
+
+#onlineUsers::-webkit-scrollbar-track {
+    width: 40px;
+}
+
+#onlineUsers::-webkit-scrollbar-thumb {
+    height: 40px;
+    background: #444444;
+    border-radius: 30px;
+}
